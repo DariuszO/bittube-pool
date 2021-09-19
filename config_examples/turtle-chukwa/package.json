@@ -1,33 +1,36 @@
 {
-    "name": "cryptonote-nodejs-pool",
-    "version": "1.4.0",
+    "name": "turtle-pool",
+    "version": "0.0.18",
     "license": "GPL-2.0",
-    "Original author": "Daniel Vandal",
-    "Maintained by": "Musclesonvacation",
+    "authors": "Matthew Little",
+    "contributors": [
+        "Brandon Lehmann <brandonlehmann@gmail.com>"
+    ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/muscleman/cryptonote-nodejs-pool.git"
+        "url": "https://github.com/turtlecoin/turtle-pool"
+    },
+    "scripts": {
+        "test": "npm install && node tests/dependencyTests.js"
     },
     "dependencies": {
         "async": "1",
         "base58-native": "*",
         "bignum": "*",
-        "cli-color": "*",
-        "turtlecoin-cryptonote-util": "0.0.7",
-        "cryptonight-hashing": "git://github.com/MoneroOcean/node-cryptonight-hashing.git",
-        "turtlecoin-multi-hashing": "0.0.19",
+        "cli-color": "^1.4.0",
         "dateformat": "*",
-        "mailgun.js": "*",
-        "node-telegram-bot-api": "*",
-        "nodemailer": "2.7.2",
-        "nodemailer-sendmail-transport": "*",
         "redis": "*",
-        "socket.io": "^2.1.1",
-        "time-ago": "*",
-        "request": "^2.88.0",
-        "request-promise-native": "^1.0.5"
+        "safe-buffer": "^5.1.2",
+        "turtlecoin-cryptonote-util": "0.0.7",
+        "turtlecoin-multi-hashing": "0.0.19",
+        "turtlecoin-utils": "0.0.13"
     },
     "engines": {
-        "node": ">=8.11.3"
+        "node": ">=6"
+    },
+    "standard": {
+        "ignore": [
+            "/website/*js"
+        ]
     }
 }
